@@ -4,7 +4,7 @@ public class WeatherNow {
 	
 	private List<Weather> weather;
 	
-	
+	This is new line.
 	
 	
 	
