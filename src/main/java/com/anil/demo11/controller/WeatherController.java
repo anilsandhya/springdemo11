@@ -26,9 +26,9 @@ public class WeatherController {
 	public WeatherNow weathernow(@RequestParam(value = "city", defaultValue = "Marietta,GA,USA") String city) {
 		
 		WeatherNow currentWeather = weatherNowService.getWeather(city);
-		System.out.println(String.format(template, currentWeather.getMain(), currentWeather.getTempmin(), currentWeather.getTempmax(),
-				currentWeather.getMain(), currentWeather.getTemp(), currentWeather.getFeelslike()));
+		System.out.println(String.format(template, currentWeather.main.getTemp(), currentWeather.main.getTemp_min(), currentWeather.main.getTemp_max(),
+				currentWeather.weather.get(0).getMain(), currentWeather.main.getTemp(), currentWeather.main.getFeels_like()));
 		
-		return new WeatherNow();
+		return currentWeather;
 	}
 }
