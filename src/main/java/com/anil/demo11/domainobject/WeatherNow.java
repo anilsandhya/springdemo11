@@ -20,5 +20,4 @@ public class WeatherNow {
 		this.main = main;
 	}
 	
-	
 }
