@@ -22,13 +22,13 @@ public class WeatherController {
 	
 	@Autowired
 	private WeatherNowService weatherNowService;
-	private static final String template = "%s min-%s max-%s, currently it is %s, %sF, feels like %sF.";
+	private static final String template = "%s - %s min-%s max-%s, currently it is %s, %sF, feels like %sF.";
 	
 	@GetMapping("/weathernow")
 	public WeatherNow weathernow(@RequestParam(value = "city", defaultValue = "Marietta,GA,USA") String city) {
 		
 		WeatherNow currentWeather = weatherNowService.getWeather(city);
-		System.out.println(String.format(template, currentWeather.main.getTemp(), currentWeather.main.getTemp_min(), currentWeather.main.getTemp_max(),
+		System.out.println(String.format(template, city, currentWeather.main.getTemp(), currentWeather.main.getTemp_min(), currentWeather.main.getTemp_max(),
 				currentWeather.weather.get(0).getMain(), currentWeather.main.getTemp(), currentWeather.main.getFeels_like()));
 		
 		return currentWeather;
