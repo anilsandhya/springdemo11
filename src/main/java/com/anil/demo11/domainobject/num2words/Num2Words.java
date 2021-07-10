@@ -1,4 +1,4 @@
-package com.anil.demo11.domainobject;
+package com.anil.demo11.domainobject.num2words;
 
 public class Num2Words {
 	public String words;

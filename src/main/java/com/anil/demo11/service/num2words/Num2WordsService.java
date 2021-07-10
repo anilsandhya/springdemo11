@@ -1,8 +1,8 @@
-package com.anil.demo11.service;
+package com.anil.demo11.service.num2words;
 
 import org.springframework.stereotype.Service;
 
-import com.anil.demo11.domainobject.Num2Words;
+import com.anil.demo11.domainobject.num2words.Num2Words;
 
 @Service
 public class Num2WordsService implements INum2Words {

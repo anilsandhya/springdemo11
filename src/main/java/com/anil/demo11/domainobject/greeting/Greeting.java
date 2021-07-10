@@ -1,4 +1,4 @@
-package com.anil.demo11.domainobject;
+package com.anil.demo11.domainobject.greeting;
 
 public class Greeting {
 	private final long id;

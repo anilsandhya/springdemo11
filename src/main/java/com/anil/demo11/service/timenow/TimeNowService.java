@@ -1,4 +1,4 @@
-package com.anil.demo11.service;
+package com.anil.demo11.service.timenow;
 
 import java.text.SimpleDateFormat;
 

@@ -1,4 +1,4 @@
-package com.anil.demo11.service;
+package com.anil.demo11.service.jdbc1;
 
 import java.util.Arrays;
 import java.util.List;
@@ -28,7 +28,7 @@ public class CustomerService implements ICustomer {
 	    // Split up the array of whole names into an array of first/last names
 	    List<Object[]> splitUpNames = Arrays.asList("John Woo", "Jeff Dean", "Josh Bloch", "Josh Long").stream()
 	        .map(name -> name.split(" ")).collect(Collectors.toList());
-
+	    // ?????? disect the above and below line ------------------------------------------------------------------------
 	    // Use a Java 8 stream to print out each tuple of the list
 	    splitUpNames.forEach(name -> log.info(String.format("Inserting customer record for %s %s", name[0], name[1])));
 

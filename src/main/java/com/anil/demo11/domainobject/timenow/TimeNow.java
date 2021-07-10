@@ -1,4 +1,4 @@
-package com.anil.demo11.domainobject;
+package com.anil.demo11.domainobject.timenow;
 
 public class TimeNow {
 	private final String content;

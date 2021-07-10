@@ -1,11 +1,12 @@
-package com.anil.demo11.controller;
+package com.anil.demo11.controller.jdbc1;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.jdbc.core.JdbcTemplate;
-import com.anil.demo11.domainobject.Customer;
-import com.anil.demo11.service.CustomerService;
+
+import com.anil.demo11.domainobject.jdbc1.Customer;
+import com.anil.demo11.service.jdbc1.CustomerService;
 
 @RestController
 public class CustomerController {
