@@ -1,12 +1,12 @@
-package com.anil.demo11.controller;
+package com.anil.demo11.controller.num2words;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.anil.demo11.domainobject.Num2Words;
-import com.anil.demo11.service.Num2WordsService;
+import com.anil.demo11.domainobject.num2words.Num2Words;
+import com.anil.demo11.service.num2words.Num2WordsService;
 
 @RestController
 public class Num2WordsController {

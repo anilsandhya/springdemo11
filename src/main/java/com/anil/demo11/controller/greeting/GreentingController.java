@@ -1,4 +1,4 @@
-package com.anil.demo11.controller;
+package com.anil.demo11.controller.greeting;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.anil.demo11.domainobject.Greeting;
+import com.anil.demo11.domainobject.greeting.Greeting;
 
 @RestController
 public class GreentingController {
