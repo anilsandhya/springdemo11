@@ -1,6 +1,8 @@
-package com.anil.demo11.domainobject;
+package com.anil.demo11.domainobject.weather;
 
 import java.util.List;
+
+import com.anil.demo11.domainobject.Main;
 
 public class WeatherNow {
 	

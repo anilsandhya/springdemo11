@@ -1,4 +1,4 @@
-package com.anil.demo11.domainobject;
+package com.anil.demo11.domainobject.weather;
 
 public class Weather {
 	public int id;

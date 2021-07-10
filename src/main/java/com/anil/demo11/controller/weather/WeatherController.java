@@ -1,12 +1,12 @@
-package com.anil.demo11.controller;
+package com.anil.demo11.controller.weather;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.anil.demo11.domainobject.WeatherNow;
-import com.anil.demo11.service.WeatherNowService;
+import com.anil.demo11.domainobject.weather.WeatherNow;
+import com.anil.demo11.service.weather.WeatherNowService;
 
 // this is new comment
 

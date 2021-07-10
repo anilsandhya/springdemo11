@@ -1,9 +1,9 @@
-package com.anil.demo11.service;
+package com.anil.demo11.service.weather;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.anil.demo11.domainobject.WeatherNow;
+import com.anil.demo11.domainobject.weather.WeatherNow;
 
 @Service
 public class WeatherNowService implements IWeatherNow {
