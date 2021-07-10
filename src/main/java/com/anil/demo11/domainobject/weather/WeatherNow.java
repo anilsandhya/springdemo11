@@ -8,6 +8,7 @@ public class WeatherNow {
 	
 	public List<Weather> weather;
 	public Main main;
+	public String city;
 	
 	public List<Weather> getWeather() {
 		return weather;
@@ -20,6 +21,12 @@ public class WeatherNow {
 	}
 	public void setMain(Main main) {
 		this.main = main;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
 	}
 	
 }

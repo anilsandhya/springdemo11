@@ -20,6 +20,7 @@ public class WeatherNowService implements IWeatherNow {
 		RestTemplate restTemplate = new RestTemplate();
 		WeatherNow response = restTemplate.getForObject(WEATHER_URL, WeatherNow.class);
 		System.out.println(response.toString());
+		response.setCity(city);
 		return response;
 	}
 
