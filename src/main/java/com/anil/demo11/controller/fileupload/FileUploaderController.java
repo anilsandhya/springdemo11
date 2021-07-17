@@ -36,9 +36,13 @@ public class FileUploaderController {
 	public String listUploadedFiles(Model model) throws IOException {
 		// what is this doing?
 		System.out.println("**** in ListUploaded file");
-		model.addAttribute("files", storageService.loadAll().map(
-			path -> MvcUriComponentsBuilder.fromMethodName(FileUploaderController.class,
-					"serveFile", path.getFileName().toString()).build().toUri().toString())
+		model.addAttribute("files", storageService.loadAll()
+				.map(path -> MvcUriComponentsBuilder
+					.fromMethodName(FileUploaderController.class,"serveFile", path.getFileName()
+							.toString())
+					.build()
+					.toUri()
+					.toString())
 				.collect(Collectors.toList()));
 		return "uploadForm";
 	}
@@ -47,8 +51,10 @@ public class FileUploaderController {
 	@ResponseBody
 	public ResponseEntity<Resource> serveFile(@PathVariable String filename) {
 		Resource file = storageService.loadAsResource(filename);
-		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION,
-				"attachment; filename=\"" + file.getFilename() + "\"").body(file); 
+		return ResponseEntity
+				.ok()
+				.header(HttpHeaders.CONTENT_DISPOSITION,"attachment; filename=\"" + file.getFilename() + "\"")
+				.body(file); 
 	}
 	
 	@PostMapping("/")

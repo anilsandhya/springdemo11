@@ -11,8 +11,11 @@ import org.springframework.context.annotation.Bean;
 import com.anil.demo11.domainobject.fileupload.IStorage;
 import com.anil.demo11.domainobject.fileupload.StorageProperties;
 
+//import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 @SpringBootApplication
 @EnableConfigurationProperties(StorageProperties.class)
+//@EnableSwagger2
 public class Demo11Application {
 
 	public static void main(String[] args) {
